@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHIKEN CHU WANAKERTA</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<<header>
+<img src="logo.png" width="170">
+<h2>CHIKEN CHU WANAKERTA</h2>
+<p>Enak • Praktis • Sampai</p>
+</header>
+<div class="slider-container">
+
+    <div class="slider">
+
+        <!-- Banner asli -->
+        <img src="banner1.jpg" class="slide">
+        <img src="banner2.jpg" class="slide">
+        <img src="banner3.jpg" class="slide">
+        <img src="banner4.jpg" class="slide">
+        <img src="banner5.jpg" class="slide">
+
+    </div>
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+</div>
+
+<div class="card" id="menu">
+    <div class="card-judul-menu">
+    <img src="menu-icon.png" alt="Menu" class="icon-menu">
+    <h2>Menu</h2>
+    </div>
+  
+
+    <div class="menu-grid">
+
+        <!-- DI SINI NANTI KITA TEMPEL 9 MENU -->
+<div class="menu-card">
+    <img src="rice bowl.jpg" class="menu-img"onclick="openImage(this.src)">
+
+        <h2>Rice Bowl Chicken Katsu</h2>
+
+<!-- TARUH KODE NOMOR 1 DI SINI -->
+
+<h3>Pilih Saus:</h3>
+
+<div class="opsi-grid">
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="saus1" value="Mentai">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Mentai</span>
+            <span class="harga-menu">Rp17.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="saus1" value="Sambal Jontor">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Sambal Jontor</span>
+            <span class="harga-menu">Rp17.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="saus1" value="Teriyaki">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Teriyaki</span>
+            <span class="harga-menu">Rp17.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="saus1" value="Barbeque">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Barbeque</span>
+            <span class="harga-menu">Rp17.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="saus1" value="Lada Hitam">
+
+        <div class="isi-menu">
+            <span class="nama-menu">Lada Hitam</span>
+            <span class="harga-menu">Rp17.000</span>
+        </div>
+
+    </label>
+
+</div>
+
+<button class="btn-pesan" onclick="pesanRiceBowl()">
+🛒 Pesan Sekarang
+</button>
+
+</div>
+        </div>
+    </div>
+</div>
+      <div class="menu-card">
+
+<img src="nasidaunjeruk.jpg" class="menu-img"onclick="openImage(this.src)">
+
+<div class="menu-info">
+
+<h2> Nasi Daun Jeruk Ayam Goreng Bawang Putih</h2>
+
+<h3>Pilih Sambal:</h3>
+
+<div class="opsi-grid">
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="sambal2" value="Sambal Ijo">
+
+        <div class="isi-menu">
+            <span class="nama-menu">Sambal Ijo</span>
+            <span class="harga-menu">Rp16.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="sambal2" value="Sambal Merah">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Sambal Merah</span>
+            <span class="harga-menu">Rp16.000</span>
+        </div>
+
+    </label>
+
+</div>
+
+<button class="btn-pesan" onclick="pesanNasiDaunJeruk()">
+🛒 Pesan Sekarang
+</button>
+
+</div>
+
+      </div>
+      <div class="menu-card">
+
+<img src="miejebew.jpg" class="menu-img"onclick="openImage(this.src)">
+
+<div class="menu-info">
+
+<h2>🍜 Mie Jebew</h2>
+
+<h3>Pilih Varian:</h3>
+
+<div class="opsi-grid">
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="mie3" value="Chicken Katsu - Rp20.000">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Chicken Katsu</span>
+            <span class="harga-menu">Rp20.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="mie3" value="Baso Kecil - Rp12.000">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Baso Kecil</span>
+            <span class="harga-menu">Rp12.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="mie3" value="Baso Jumbo - Rp17.000">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Baso Jumbo</span>
+            <span class="harga-menu">Rp17.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="mie3" value="Pangsit Ayam - Rp15.000">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Pangsit Ayam</span>
+            <span class="harga-menu">Rp15.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="mie3" value="Tulang - Rp15.000">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Tulang</span>
+            <span class="harga-menu">Rp15.000</span>
+        </div>
+
+    </label>
+
+</div>
+
+<button class="btn-pesan" onclick="pesanMieJebew()">
+🛒 Pesan Sekarang
+</button>
+
+</div>
+
+      </div>
+      <div class="menu-card">
+
+<img src="nasipedaskatsu.jpg" class="menu-img"onclick="openImage(this.src)">
+
+<div class="menu-info">
+
+<h2>Nasi Pedes Katsu</h2>
+
+<div class="harga">
+Rp17.000
+</div>
+
+<button class="btn-pesan" onclick="pesanNasiPedesKatsu()">
+🛒 Pesan Sekarang
+</button>
+
+</div>
+
+      </div>
+      <div class="menu-card">
+
+    <img src="bakaran.jpg" class="menu-img" onclick="openImage(this.src)">
+
+    <div class="menu-info">
+
+    <h2> Aneka Bakaran</h2>
+
+    <p class="judul-pilihan">Pilih Menu</p>
+
+<div class="opsi-grid">
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="pedas6" value="Wonton Chili Oil - Rp15.000">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Wonton Chili Oil</span>
+            <span class="harga-menu">Rp15.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="pedas6" value="Wonton Kuah Creamy - Rp15.000">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Wonton Kuah Creamy</span>
+            <span class="harga-menu">Rp15.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="pedas6" value="Wonton Kuah Original - Rp10.000">
+
+        <div class="isi-menu">
+            <span class="nama-menu">Wonton Kuah Original</span>
+            <span class="harga-menu">Rp10.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="pedas6" value="Wonton Kuah Chili Oil - Rp15.000">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Wonton Kuah Chili Oil</span>
+            <span class="harga-menu">Rp15.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="pedas6" value="Wonton Goreng - Rp10.000">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Wonton Goreng</span>
+            <span class="harga-menu">Rp10.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="pedas6" value="Cireng Isi Kuah Creamy - Rp15.000">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Cireng Isi Kuah Creamy</span>
+            <span class="harga-menu">Rp15.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="pedas6" value="Cireng Isi Chili Oil - Rp15.000">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Cireng Isi Chili Oil</span>
+            <span class="harga-menu">Rp15.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="pedas6" value="Cireng Isi Ayam Suwir Pedas - Rp15.000">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Cireng Isi Ayam Suwir Pedas</span>
+            <span class="harga-menu">Rp15.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="pedas6" value="Dimsum Mentai - Rp15.000">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Dimsum Mentai</span>
+            <span class="harga-menu">Rp15.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="pedas6" value="Dimsum Kuah Creamy - Rp15.000">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Dimsum Kuah Creamy</span>
+            <span class="harga-menu">Rp15.000</span>
+        </div>
+
+    </label>
+
+    <label class="pilihan-menu">
+
+        <input type="radio" name="pedas6" value="Dimsum Original - Rp10.000">
+
+        <div class="isi-menu">
+            <span class="nama-menu"> Dimsum Original</span>
+            <span class="harga-menu">Rp10.000</span>
+        </div>
+
+    </label>
+
+</div>
+
+    <button class="btn-pesan" onclick="pesanBakaran()">
+        🛒 Pesan Sekarang
+    </button>
+
+    </div>
+
+      </div>
+      <div class="menu-card">
+
+    <img src="cemilanpedas.jpg" class="menu-img"onclick="openImage(this.src)">
+
+    <div class="menu-info">
+<h2> Cemilan Pedas</h2>
+
+<p class="judul-pilihan">Pilih Menu</p>
+
+<div class="opsi-grid">
+
+<label class="pilihan-menu">
+<input type="radio" name="cemilan6" value="Wonton Chili Oil - Rp15.000">
+<div class="isi-menu">
+<span class="nama-menu"> Wonton Chili Oil</span>
+<span class="harga-menu">Rp15.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="cemilan6" value="Wonton Kuah Creamy - Rp15.000">
+<div class="isi-menu">
+<span class="nama-menu"> Wonton Kuah Creamy</span>
+<span class="harga-menu">Rp15.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="cemilan6" value="Wonton Kuah Original - Rp10.000">
+<div class="isi-menu">
+<span class="nama-menu">Wonton Kuah Original</span>
+<span class="harga-menu">Rp10.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="cemilan6" value="Wonton Kuah Chili Oil - Rp15.000">
+<div class="isi-menu">
+<span class="nama-menu"> Wonton Kuah Chili Oil</span>
+<span class="harga-menu">Rp15.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="cemilan6" value="Wonton Goreng - Rp10.000">
+<div class="isi-menu">
+<span class="nama-menu"> Wonton Goreng</span>
+<span class="harga-menu">Rp10.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="cemilan6" value="Cireng Isi Kuah Creamy - Rp15.000">
+<div class="isi-menu">
+<span class="nama-menu"> Cireng Kuah Creamy</span>
+<span class="harga-menu">Rp15.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="cemilan6" value="Cireng Isi Chili Oil - Rp15.000">
+<div class="isi-menu">
+<span class="nama-menu"> Cireng Chili Oil</span>
+<span class="harga-menu">Rp15.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="cemilan6" value="Cireng Isi Ayam Suwir Pedas - Rp10.000">
+<div class="isi-menu">
+<span class="nama-menu"> Cireng Ayam Pedas</span>
+<span class="harga-menu">Rp10.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="cemilan6" value="Dimsum Mentai - Rp15.000">
+<div class="isi-menu">
+<span class="nama-menu"> Dimsum Mentai</span>
+<span class="harga-menu">Rp15.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="cemilan6" value="Dimsum Kuah Creamy - Rp15.000">
+<div class="isi-menu">
+<span class="nama-menu"> Dimsum Kuah Creamy</span>
+<span class="harga-menu">Rp15.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="cemilan6" value="Dimsum Ori - Rp10.000">
+<div class="isi-menu">
+<span class="nama-menu"> Dimsum Ori</span>
+<span class="harga-menu">Rp10.000</span>
+</div>
+</label>
+
+</div>
+
+        <button class="btn-pesan" onclick="pesanCemilanPedas()">
+            🛒 Pesan Sekarang
+        </button>
+
+    </div>
+
+      </div>
+<div class="menu-card">
+
+    <img src="minuman.jpg" class="menu-img" onclick="openImage(this.src)">
+
+    <div class="menu-info">
+
+        <h2> Aneka Minuman</h2>
+
+<p class="judul-pilihan">Pilih Minuman</p>
+
+<div class="opsi-grid">
+
+<label class="pilihan-menu">
+<input type="radio" name="minuman7" value="Pop Ice - Rp5.000">
+<div class="isi-menu">
+<span class="nama-menu"> Pop Ice</span>
+<span class="harga-menu">Rp5.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="minuman7" value="Tea Jus - Rp5.000">
+<div class="isi-menu">
+<span class="nama-menu"> Tea Jus</span>
+<span class="harga-menu">Rp5.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="minuman7" value="Nutrisari - Rp5.000">
+<div class="isi-menu">
+<span class="nama-menu"> Nutrisari</span>
+<span class="harga-menu">Rp5.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="minuman7" value="Teh Poci - Rp5.000">
+<div class="isi-menu">
+<span class="nama-menu"> Teh Poci</span>
+<span class="harga-menu">Rp5.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="minuman7" value="Teh Hijau - Rp5.000">
+<div class="isi-menu">
+<span class="nama-menu"> Teh Hijau</span>
+<span class="harga-menu">Rp5.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="minuman7" value="Cappuccino Cincau - Rp8.000">
+<div class="isi-menu">
+<span class="nama-menu"> Cappuccino Cincau</span>
+<span class="harga-menu">Rp8.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="minuman7" value="Es Teler Kuah Creamy - Rp10.000">
+<div class="isi-menu">
+<span class="nama-menu"> Es Teler Kuah Creamy</span>
+<span class="harga-menu">Rp10.000</span>
+</div>
+</label>
+
+</div>
+
+        <button class="btn-pesan" onclick="pesanMinuman()">
+            🛒 Pesan Sekarang
+        </button>
+
+    </div>
+
+</div>
+      <div class="menu-card">
+
+    <img src="miejebewmentai.jpg" class="menu-img" onclick="openImage(this.src)">
+
+    <div class="menu-info">
+
+        <h2>Mie Jebew Mentai</h2>
+
+<p class="judul-pilihan">Pilih Menu</p>
+
+<div class="opsi-grid">
+
+<label class="pilihan-menu">
+<input type="radio" name="mentai8" value="Chicken Katsu - Rp20.000">
+<div class="isi-menu">
+<span class="nama-menu"> Chicken Katsu</span>
+<span class="harga-menu">Rp20.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="mentai8" value="Baso Kecil - Rp12.000">
+<div class="isi-menu">
+<span class="nama-menu"> Baso Kecil</span>
+<span class="harga-menu">Rp12.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="mentai8" value="Baso Jumbo - Rp17.000">
+<div class="isi-menu">
+<span class="nama-menu"> Baso Jumbo</span>
+<span class="harga-menu">Rp17.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="mentai8" value="Pangsit Ayam - Rp15.000">
+<div class="isi-menu">
+<span class="nama-menu"> Pangsit Ayam</span>
+<span class="harga-menu">Rp15.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="mentai8" value="Tulang - Rp15.000">
+<div class="isi-menu">
+<span class="nama-menu"> Tulang</span>
+<span class="harga-menu">Rp15.000</span>
+</div>
+</label>
+
+</div>
+
+        <button class="btn-pesan" onclick="pesanMieJebewMentai()">
+            🛒 Pesan Sekarang
+        </button>
+
+    </div>
+
+      </div>
+      <div class="menu-card">
+
+    <img src="cemilanmanis.jpg" class="menu-img"onclick="openImage(this.src)">
+
+    <div class="menu-info">
+
+        <h2>Cemilan Manis</h2>
+
+<p class="judul-pilihan">Pilih Menu</p>
+
+<div class="opsi-grid">
+
+<label class="pilihan-menu">
+<input type="radio" name="manis9" value="Pisang Crispy - Rp10.000">
+<div class="isi-menu">
+<span class="nama-menu"> Pisang Crispy</span>
+<span class="harga-menu">Rp10.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="manis9" value="Piscok - Rp10.000">
+<div class="isi-menu">
+<span class="nama-menu"> Piscok</span>
+<span class="harga-menu">Rp10.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="manis9" value="Jasuke - Rp10.000">
+<div class="isi-menu">
+<span class="nama-menu"> Jasuke</span>
+<span class="harga-menu">Rp10.000</span>
+</div>
+</label>
+
+<label class="pilihan-menu">
+<input type="radio" name="manis9" value="Kentang Goreng - Rp10.000">
+<div class="isi-menu">
+<span class="nama-menu"> Kentang Goreng</span>
+<span class="harga-menu">Rp10.000</span>
+</div>
+</label>
+
+</div>
+
+        <button class="btn-pesan" onclick="pesanCemilanManis()">
+            🛒 Pesan Sekarang
+        </button>
+
+    </div>
+
+      </div>
+    </div>
+</div>
+<script>
+
+// ===== MENU 1 =====
+function pesanRiceBowl(){
+
+const saus = document.querySelector('input[name="saus1"]:checked').value;
+
+const pesan = `Halo Chiken Chu Wanakerta,
+
+Saya ingin pesan
+
+ Rice Bowl Chicken Katsu
+
+ Saus : ${saus}
+
+💰 Harga : Rp17.000`;
+
+window.open(`https://wa.me/6283833185781?text=${encodeURIComponent(pesan)}`,"_blank");
+
+}
+
+// ===== MENU 2 =====
+function pesanNasiDaunJeruk(){
+
+const sambal = document.querySelector('input[name="sambal2"]:checked').value;
+
+const pesan = `Halo Chiken Chu Wanakerta,
+
+Saya ingin pesan
+
+ Nasi Daun Jeruk Ayam Goreng Bawang Putih
+
+ Sambal : ${sambal}
+
+💰 Harga : Rp16.000`;
+
+window.open(`https://wa.me/6283833185781?text=${encodeURIComponent(pesan)}`,"_blank");
+
+}
+
+// ===== MENU 3 =====
+function pesanMieJebew(){
+
+const menu = document.querySelector('input[name="mie3"]:checked').value;
+
+const pesan = `Halo Chiken Chu Wanakerta,
+
+Saya ingin pesan
+
+🍜 Mie Jebew
+
+📌 Pilihan : ${menu}`;
+
+window.open(`https://wa.me/6283833185781?text=${encodeURIComponent(pesan)}`,"_blank");
+
+}
+
+// ===== MENU 4 =====
+function pesanNasiPedesKatsu(){
+
+const pesan = `Halo Chiken Chu Wanakerta,
+
+Saya ingin pesan
+
+🍛 Nasi Pedes Katsu
+
+💰 Harga : Rp17.000`;
+
+window.open(`https://wa.me/6283833185781?text=${encodeURIComponent(pesan)}`,"_blank");
+
+}
+
+// ===== MENU 5 =====
+function pesanBakaran(){
+
+const menu = document.querySelector('input[name="bakaran5"]:checked').value;
+
+const pesan = `Halo Chiken Chu Wanakerta,
+
+Saya ingin pesan
+
+ Aneka Bakaran
+
+📌 Pilihan : ${menu}`;
+
+window.open(
+`https://wa.me/6283833185781?text=${encodeURIComponent(pesan)}`,
+"_blank"
+);
+
+  }
+
+// ===== MENU 6 =====
+function pesanCemilanPedas(){
+
+const menu = document.querySelector('input[name="cemilan6"]:checked').value;
+
+const pesan = `Halo Chiken Chu Wanakerta,
+
+Saya ingin pesan
+
+ Cemilan Pedas
+
+📌 Pilihan : ${menu}`;
+
+window.open(`https://wa.me/6283833185781?text=${encodeURIComponent(pesan)}`,"_blank");
+
+}
+
+// ===== MENU 7 =====
+function pesanMinuman(){
+
+const menu = document.querySelector('input[name="minuman7"]:checked').value;
+
+const pesan = `Halo Chiken Chu Wanakerta,
+
+Saya ingin pesan
+
+ Aneka Minuman
+
+📌 Pilihan : ${menu}`;
+
+window.open(`https://wa.me/6283833185781?text=${encodeURIComponent(pesan)}`,"_blank");
+
+}
+
+// ===== MENU 8 =====
+function pesanMieJebewMentai(){
+
+const menu = document.querySelector('input[name="mentai8"]:checked').value;
+
+const pesan = `Halo Chiken Chu Wanakerta,
+
+Saya ingin pesan
+
+🍜 Mie Jebew Mentai
+
+📌 Pilihan : ${menu}`;
+
+window.open(`https://wa.me/6283833185781?text=${encodeURIComponent(pesan)}`,"_blank");
+
+}
+
+// ===== MENU 9 =====
+function pesanCemilanManis(){
+
+const menu = document.querySelector('input[name="manis9"]:checked').value;
+
+const pesan = `Halo Chiken Chu Wanakerta,
+
+Saya ingin pesan
+
+ Cemilan Manis
+
+📌 Pilihan : ${menu}`;
+
+window.open(`https://wa.me/6283833185781?text=${encodeURIComponent(pesan)}`,"_blank");
+
+}
+
+  </script>
+  <div id="imageModal" class="image-modal" onclick="closeImage()">
+    <span class="close-btn">&times;</span>
+    <img id="modalImage" class="modal-image">
+  </div>
+  <script>
+function openImage(src){
+    document.getElementById("imageModal").style.display="flex";
+    document.getElementById("modalImage").src=src;
+}
+
+function closeImage(){
+    document.getElementById("imageModal").style.display="none";
+}
+  </script>
+  <script>
+
+const slider = document.querySelector(".slider");
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+
+let index = 1;
+const total = slides.length;
+let autoSlide;
+
+// Mulai dari banner pertama (karena ada clone di depan)
+slider.style.transform = `translateX(-${index * 100}%)`;
+
+function updateDots(){
+    dots.forEach(dot => dot.classList.remove("active"));
+
+    let active = index - 1;
+
+    if(active < 0) active = 4;
+    if(active > 4) active = 0;
+
+    dots[active].classList.add("active");
+}
+
+function pindahSlide(){
+
+    slider.style.transition = "transform .6s ease-in-out";
+    slider.style.transform = `translateX(-${index * 100}%)`;
+
+    updateDots();
+
+}
+
+next.addEventListener("click",()=>{
+
+    if(index >= total-1) return;
+
+    index++;
+    pindahSlide();
+
+});
+
+prev.addEventListener("click",()=>{
+
+    if(index <=0) return;
+
+    index--;
+    pindahSlide();
+
+});
+
+slider.addEventListener("transitionend",()=>{
+
+    if(index === total-1){
+
+        slider.style.transition="none";
+        index=1;
+        slider.style.transform=`translateX(-${index*100}%)`;
+
+    }
+
+    if(index===0){
+
+        slider.style.transition="none";
+        index=total-2;
+        slider.style.transform=`translateX(-${index*100}%)`;
+
+    }
+
+    updateDots();
+
+});
+
+dots.forEach((dot,i)=>{
+
+    dot.addEventListener("click",()=>{
+
+        index=i+1;
+        pindahSlide();
+
+    });
+
+});
+
+function mulaiAuto(){
+
+    autoSlide=setInterval(()=>{
+
+        index++;
+        pindahSlide();
+
+    },4000);
+
+}
+
+function stopAuto(){
+
+    clearInterval(autoSlide);
+
+}
+
+mulaiAuto();
+
+document.querySelector(".slider-container").addEventListener("mouseenter",stopAuto);
+
+document.querySelector(".slider-container").addEventListener("mouseleave",mulaiAuto);
+
+document.querySelector(".slider-container").addEventListener("touchstart",stopAuto);
+
+document.querySelector(".slider-container").addEventListener("touchend",mulaiAuto);
+// ===== SWIPE HP =====
+
+let startX = 0;
+let endX = 0;
+
+const sliderContainer = document.querySelector(".slider-container");
+
+sliderContainer.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+});
+
+sliderContainer.addEventListener("touchmove", (e) => {
+    endX = e.touches[0].clientX;
+});
+
+sliderContainer.addEventListener("touchend", () => {
+
+    const jarak = startX - endX;
+
+    // Swipe ke kiri
+    if (jarak > 50) {
+        index++;
+        pindahSlide();
+    }
+
+    // Swipe ke kanan
+    if (jarak < -50) {
+        index--;
+        pindahSlide();
+    }
+
+});
+  </script>
+  <script>
+document.querySelectorAll('.pilihan-menu input').forEach(input=>{
+
+    input.addEventListener('click',function(){
+
+        const group=this.name;
+        const semua=document.querySelectorAll('input[name="'+group+'"]');
+
+        if(this.dataset.active==="1"){
+
+            this.checked=false;
+            this.dataset.active="0";
+            this.closest(".pilihan-menu").classList.remove("active");
+            return;
+
+        }
+
+        semua.forEach(r=>{
+
+            r.dataset.active="0";
+            r.closest(".pilihan-menu").classList.remove("active");
+
+        });
+
+        this.dataset.active="1";
+        this.checked=true;
+        this.closest(".pilihan-menu").classList.add("active");
+
+    });
+
+});
+  
+</body>
+</html>
+</body>
+</html>
